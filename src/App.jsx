@@ -63,13 +63,10 @@ useEffect(() => {
       />
       <button onClick={handleAddTodo}>Add</button>
       <ul>
-        {todos.map((todo, index) => (
-          <li
-            key={index}
-            style={{
-              display: "flex",
-            }}
-          >
+      {todos.map((todo, index) => (
+        <li key={index} style={{ display: "flex" }}>
+          {todo.text}
+        
             <div style={{ display: "flex", alignItems: "center" }}>
               <input
                 type="checkbox"
